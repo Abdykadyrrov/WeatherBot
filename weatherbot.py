@@ -42,7 +42,7 @@ async def get_weather(message: types.Message):
         if cur_weather1 > 30:
             feedback = "На улице жарищее! Далой одежду!!"
         elif cur_weather1 < 30 and cur_weather1 > 15:
-            feedback = "На улице тепло! Нурислам советует одеться легко."
+            feedback = "На улице тепло! Одевайтесь как хотите!"
         elif cur_weather1 < 15 and cur_weather1 > 0:
             feedback = "На улице прохладно! Нурислам советует одеться потеплее!!"
         elif cur_weather1 < 0 and cur_weather1 > -15:

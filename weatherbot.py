@@ -22,7 +22,7 @@ async def get_weather(message: types.Message):
     code_to_smile = {
         "Clear": "Ясно \U00002600",
         "Clouds": "Облачно \U00002601",
-        "Rain": "Дождь, зонтик ваш главный помощник\U00002614",
+        "Rain": "Дождь, зонтик - ваш главный помощник\U00002614",
         "Drizzle": "Дождь \U00002614",
         "Thunderstorm": "Гроза \U000026A1",
         "Snow": "Снег \U0001F328",
@@ -40,15 +40,15 @@ async def get_weather(message: types.Message):
         cur_weather = data["main"]["temp"]
         cur_weather1 = int(cur_weather)
         if cur_weather1 > 30:
-            feedback = "На улице жарищее! Далой одежду!!"
+            feedback = "На улице жарищее! Эрлан кричит: ""Далой одежду!!"""
         elif cur_weather1 < 30 and cur_weather1 > 15:
             feedback = "На улице тепло! Одевайтесь как хотите!"
         elif cur_weather1 < 15 and cur_weather1 > 0:
             feedback = "На улице прохладно! Нурислам советует одеться потеплее!!"
         elif cur_weather1 < 0 and cur_weather1 > -15:
-            feedback = "На улице холодно! Нурислам напоминает надеть шапку!!"
+            feedback = "На улице холодно! Нурсултан напоминает надеть шапку!!"
         elif cur_weather1 < -15 and cur_weather1 > -30:
-            feedback = "На улице холодрыга! Нурислам совету одеться максимально тепло, будто едешь на Северный полюс!!"
+            feedback = "На улице холодрыга! Тынчтык советует одеться максимально тепло, будто едешь на Северный полюс!!"
 
 
         weather_description = data["weather"][0]["main"]
